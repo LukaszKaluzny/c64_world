@@ -1,0 +1,23 @@
+{
+  "name": "c64_world_grunt",
+  "version": "1.0.0",
+  "description": "c64world site with grunt",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veiner87/c64_world_sass.git"
+  },
+  "author": "Lukasz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veiner87/c64_world_sass/issues"
+  },
+  "homepage": "https://github.com/veiner87/c64_world_sass#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}

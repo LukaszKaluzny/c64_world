@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h3 {
+  text-transform: uppercase; }
+
+/*section HEADER + NAV */
+header {
+  background: #313332;
+  height: 50px;
+  padding: 0 10px; }
+  header nav img {
+    padding: 10px 0; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right; }
+    header nav ul li {
+      display: inline-block; }
+      header nav ul li a {
+        line-height: 50px;
+        padding: 0 20px;
+        display: block;
+        color: #FFF;
+        text-decoration: none;
+        text-transform: uppercase; }
+        header nav ul li a:hover {
+          background-color: #4a4c4b; }
+
+/*section HERO + SLOGAN */
+section.hero {
+  background: url("http://www.eveboo.com/wp-content/uploads/2013/04/commodore-64-logo-1080p-hd-wallpaper-.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  section.hero .slogan {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: right;
+    max-width: 600px;
+    width: 100%;
+    margin: 50px 0;
+    padding: 20px 20px; }
+    section.hero .slogan h1 {
+      color: #FFF;
+      font-weight: 100;
+      margin: 0; }
+
+section .container {
+  margin: 50px auto;
+  text-align: center; }
+
+/*section BENEFITS */
+.benefits i.fa {
+  font-size: 70px;
+  background: #313332;
+  border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  color: #FFF; }
+
+section.benefits > div > div > div:hover i {
+  background-color: #007FC4;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+section.benefits > div > div > div:hover h3 {
+  color: #007FC4;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.center {
+  text-align: center; }
+
+/*section GALLERY */
+section.gallery img {
+  display: block;
+  width: 100%; }
+
+section.gallery [class*="col-"] {
+  padding: 0;
+  margin: 0 auto; }
+
+section.gallery .col-2,
+section.gallery .col-3 {
+  position: relative; }
+
+section.gallery .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section.gallery .layer:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4s; }
+  section.gallery .layer:hover i.fa {
+    visibility: visible; }
+  section.gallery .layer i.fa {
+    background-color: #000;
+    visibility: hidden;
+    color: #313332;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 5px; }
+    section.gallery .layer i.fa:hover {
+      background-color: #1a1919; }
+    section.gallery .layer i.fa:hover {
+      transition-duration: 0.4s;
+      cursor: pointer; }
+
+/*section TEAM */
+section.team .col-3 .portrait {
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  line-height: 150px; }
+  section.team .col-3 .portrait .circle {
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    line-height: 150px;
+    text-align: center;
+    display: block;
+    border-radius: 50%; }
+    section.team .col-3 .portrait .circle:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition-duration: 0.4s;
+      cursor: pointer; }
+    section.team .col-3 .portrait .circle:hover h3 {
+      visibility: visible; }
+    section.team .col-3 .portrait .circle h3 {
+      visibility: hidden;
+      font-size: 20px;
+      margin: 0;
+      line-height: 150px;
+      text-align: center; }
+      section.team .col-3 .portrait .circle h3:hover {
+        visibility: visible; }
+
+section.team .col-3 > h3 {
+  display: none; }
+
+section.team .col-3:nth-child(1) .portrait {
+  background-image: url("http://i.wp.pl/a/f/jpeg/34826/jack-tramiel-jacek-trzmiel.jpeg"); }
+
+section.team .col-3:nth-child(2) .portrait {
+  background-image: url("https://i.ytimg.com/vi/74C4N1m8p5U/maxresdefault.jpg"); }
+
+section.team .col-3:nth-child(3) .portrait {
+  background-image: url("http://www.c64.cz/recenze/hra_creatures_ang/image018.jpg"); }
+
+section.team .col-3:nth-child(4) .portrait {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/JeroenTel.jpg/220px-JeroenTel.jpg"); }
+
+section.computer {
+  background-color: #313332;
+  max-height: 100%;
+  padding: 20px 100px; }
+  section.computer img {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    position: center;
+    color: #FFF;
+    border-radius: 5px; }
+  section.computer h1 {
+    text-align: left; }
+  section.computer p {
+    text-align: justify; }
+  section.computer h1,
+  section.computer p {
+    color: #FFF; }
+
+section.numbers {
+  padding: 20px 5px; }
+  section.numbers h1 {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive; }
+  section.numbers p {
+    color: #007FC4;
+    text-transform: uppercase;
+    font-weight: 900; }
+
+footer {
+  background-color: #313332;
+  color: #FFF; }
+  footer i.fa {
+    background-color: #007FC4;
+    width: 16.66%;
+    font-size: 30px;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 0; }
+    footer i.fa:hover {
+      background-color: #00a0f7; }
+  footer table {
+    margin: 0 auto;
+    text-align: center; }
+  footer .copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #252625;
+    border: 1px solid #4a4c4b; }
+
+@media (max-width: 1000px) {
+  section.team .col-3 {
+    width: 50%;
+    padding: 10px 60px; }
+  section.numbers .col-3 {
+    width: 100%;
+    padding: 10px 60px; }
+  section.computer {
+    padding: 10px 5px; }
+  section.computer .col-4,
+  section.computer .col-8 {
+    width: 100%;
+    padding: 10px 5px; }
+  section.computer h1 {
+    text-align: center; } }
+
+@media (max-width: 650px) {
+  footer {
+    text-align: center; }
+  footer .col-4 {
+    width: 100%; }
+  footer table {
+    margin: 0 auto;
+    text-align: center; }
+  section.team .col-3 > h3 {
+    display: inline; } }
+
+@media (max-width: 450px) {
+  header {
+    padding: 0;
+    height: auto; }
+  section.team .col-3 {
+    width: 100%;
+    padding: 10px 60px; }
+  [class*="col-"] {
+    width: 100%;
+    padding: 10px 60px; }
+  ul {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  ul li {
+    width: 100%; }
+  img {
+    display: block;
+    margin: 0 auto; }
+  section.hero > .slogan {
+    height: auto;
+    text-align: center; }
+  section.numbers .col-3 {
+    width: 100%;
+    padding: 0px 5px; }
+  section.computer {
+    padding: 5px auto; }
+  section.computer .col-4,
+  section.computer .col-8 {
+    width: 100%;
+    padding: 10px 5px; }
+  section.gallery img {
+    border-radius: 15px;
+    padding: 5px; }
+  section.team .col-3 > h3 {
+    display: inline; } }
+
+/*# sourceMappingURL=style.css.map */
